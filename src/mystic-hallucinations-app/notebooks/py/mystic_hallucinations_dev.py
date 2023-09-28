@@ -34,7 +34,7 @@ def test_chatgpt_get_chat_completions():
     return resp
 
 
-resp = test_chatgpt_get()
+resp = test_chatgpt_get_chat_completions()
 
 
 resp.ok
@@ -130,7 +130,7 @@ def write_mystic_hallucination():
     messages = [{"role": "system", "content": system_setting}]
     for prompt in prompts:
         messages.append({"role": "user", "content": prompt})
-        gpt_resp = chatgpt_get(messages)
+        gpt_resp = chatgpt_get_chat_completions(messages)
         responses.append(gpt_resp)
         gpt_resp_text = gpt_resp["choices"][0]["message"]["content"]
         messages.append(
