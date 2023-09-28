@@ -12,5 +12,5 @@ Author: [Alexander Galea](https://alexgalea.ca/)
 
 ### ChatGPT
 
-- [Mystic Hallucinations: Coding an AI Generated Poetry Web App [ChatGPT + DALL-E]](https://github.com/agalea91/youtube-codes/src/mystic-hallucinations-app)
+- [Mystic Hallucinations: Coding an AI Generated Poetry Web App [ChatGPT + DALL-E]](https://github.com/agalea91/youtube-codes/tree/main/src/mystic-hallucinations-app)
 
