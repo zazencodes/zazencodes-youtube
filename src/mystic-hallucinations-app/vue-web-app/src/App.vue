@@ -5,9 +5,14 @@
       <img id="story-image" alt="" :src="image_url" />
     </div>
   </div>
-  <button class="generate-button" @click="generateMysticHallucination()">
-    Generate new story
-  </button>
+  <div v-if="storyGenerationInProgress">
+    <div class="generate-button">Generating story...</div>
+  </div>
+  <div v-else>
+    <button class="generate-button" @click="generateMysticHallucination()">
+      Generate new story
+    </button>
+  </div>
   <div class="footer"></div>
 </template>
 
@@ -26,10 +31,12 @@ export default {
       story_html: "",
       image_url: "",
       storyGenerated: false,
+      storyGenerationInProgress: false,
     };
   },
   methods: {
     async generateMysticHallucination() {
+      this.storyGenerationInProgress = true;
       const resp = await axios.get(
         "http://127.0.0.1:5000/mystic_hallucination/generate"
       );
@@ -37,6 +44,7 @@ export default {
       this.story_html = resp.data.story_html;
       this.image_url = resp.data.image_url;
       this.storyGenerated = true;
+      this.storyGenerationInProgress = false;
     },
   },
 };
