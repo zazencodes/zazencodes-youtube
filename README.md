@@ -16,5 +16,5 @@ YouTube: [ZazenCodes](https://www.youtube.com/@ZazenCodes)
 - [OpenAI API Quickstart](https://github.com/agalea91/youtube-codes/tree/main/src/openai-api-quickstart/notebooks/src)
 
 ### ChatGPT (LLM) Prompts
-- [Chain of Density Summary](https://github.com/agalea91/youtube-codes/tree/main/src/openai-api-quickstart/notebooks/src)
+- [Chain of Density Summary]([https://github.com/agalea91/youtube-codes/tree/main/src/openai-api-quickstart/notebooks/src](https://github.com/agalea91/youtube-codes/tree/main/src/chain-of-density-summary/notebooks/src)https://github.com/agalea91/youtube-codes/tree/main/src/chain-of-density-summary/notebooks/src)
 
