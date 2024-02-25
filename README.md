@@ -16,7 +16,7 @@
 
 ### 🐍 Python Fundamentals
 - [Python Project Starter Pack Series](https://github.com/agalea91/zazencodes-youtube/tree/main/src/python-project-starter-kit/shopping-cart-app) | [YouTube 1 🎬](), [2 🎬](), [3 🎬]()
-- [The Zen of Python](https://github.com/agalea91/zazencodes-youtube/tree/main/src/zen-of-python) | [YouTube 🎬]()
+- [The Zen of Python](https://github.com/agalea91/zazencodes-youtube/tree/main/src/zen-of-python) | [YouTube 🎬](https://youtu.be/P-ipB6nj0kA)
 
 ### 💻 Coding Tutorials
 - [Easy Email Alerts for BigQuery Data using this Google Cloud Function](https://github.com/agalea91/youtube-codes/tree/main/src/bigquery-gcs-gcf-email-alerts) | [YouTube 🎬](https://youtu.be/g5a9JHFjVX4)
