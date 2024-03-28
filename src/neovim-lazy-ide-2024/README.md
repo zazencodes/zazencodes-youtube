@@ -2,7 +2,7 @@
 
 Watch my video to understand what's going on here. And don't skip step #4.
 
-1. Install/upgrade neovim and setup alias in your "rc" file (e.g. `echo "alias vim=nvim" >> ~/.bashrc`) and install/upgrade ripgrep and git
+1. Install/upgrade neovim (see [INSTALL.md](INSTALL.md)) and setup alias in your "rc" file (e.g. `echo "alias vim=nvim" >> ~/.bashrc`) and install/upgrade ripgrep and git
 2. Create a python virtual environment for neovim (e.g. LSP autocomplete) in `~/virtualenvs` named `nvim-venv`, i.e.
 
         mkdir ~/virtualenvs
