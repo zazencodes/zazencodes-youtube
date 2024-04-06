@@ -11,11 +11,15 @@
 
 ## 📚 Topics
 
+### 🎯 Productivity
+- [Neovim Lazy Lua IDE - my simple but powerful setup for 2024](https://github.com/agalea91/zazencodes-youtube/tree/main/src/neovim-lazy-ide-2024) | [YouTube 🎬](https://youtu.be/VljhZ0e9zGE)
+
 ### 🧠 Machine Learning
 - [Model Cards for Model Reporting](https://github.com/agalea91/zazencodes-youtube/tree/main/src/model-cards-for-model-reporting/notebooks) | [YouTube 🎬](https://youtu.be/saAUB_MG2d0)
 
 ### 🐍 Python Fundamentals
 - [Python Project Starter Pack Series](https://github.com/agalea91/zazencodes-youtube/tree/main/src/python-project-starter-kit/shopping-cart-app) | [YouTube 1 🎬](), [2 🎬](), [3 🎬]()
+- [Python List Comprehensions](https://github.com/agalea91/zazencodes-youtube/tree/main/src/python-list-comprehensions-noob-to-pro) | [YouTube 🎬](https://youtu.be/1-qmfHfDg6k)
 - [The Zen of Python](https://github.com/agalea91/zazencodes-youtube/tree/main/src/zen-of-python) | [YouTube 🎬](https://youtu.be/P-ipB6nj0kA)
 
 ### 💻 Coding Tutorials
