@@ -1,0 +1,4 @@
+FROM python:3.8-slim
+WORKDIR /app
+COPY . .
+CMD ["python", "-m", "my_app", "client_1"]
