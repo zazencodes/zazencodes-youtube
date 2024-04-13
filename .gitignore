@@ -28,3 +28,8 @@ __pycache__
 **/notebooks/py
 **/notebooks/html
 
+# Data files
+*.pkl
+
+# Video-specific
+src/docker-meal-demand-forecasting/**/*.csv
