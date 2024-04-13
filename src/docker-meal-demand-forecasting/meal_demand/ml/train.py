@@ -14,11 +14,11 @@ def train(df: pd.DataFrame, feature_columns: List[str], config: Config):
     """
     Train and save model.
     """
-    logger.info("Started train")
+    logger.info(f"Started train: center_type={config.center_type};")
     reg = _train(df, feature_columns, config)
     _log_traning_mertrics(reg, df, feature_columns, config)
     _store_model(reg, config)
-    logger.info("Completed train")
+    logger.info(f"Completed train center_type={config.center_type};")
     return df
 
 
@@ -47,6 +47,8 @@ def _log_traning_mertrics(
 
 def _store_model(reg: GradientBoostingRegressor, config: Config):
     name = "gbr"
-    fp = config.models_path / f"{name}_{config.model_id}.pkl"
+    fp = config.models_path / f"{name}_{config.center_type}_{config.model_id}.pkl"
     dump(reg, fp)
-    logger.info(f"Stored encoder: name={name};file={str(fp)}")
+    logger.info(
+        f"Stored encoder: name={name};center_type={config.center_type};file={str(fp)}"
+    )

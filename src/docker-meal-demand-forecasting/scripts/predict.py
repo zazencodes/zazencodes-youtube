@@ -1,9 +1,10 @@
+from meal_demand.domain.config import Config
 from meal_demand.dataprep.prep_load import prep_load
 from meal_demand.dataprep.prep_filter import prep_filter
 from meal_demand.dataprep.prep_ohe import prep_ohe
 from meal_demand.feateng.feat_ts import feat_ts
 from meal_demand.domain.config import Config
-from meal_demand.ml.train import train
+from meal_demand.ml.predict import predict
 
 import numpy as np
 import os
@@ -18,58 +19,34 @@ MODELS_PATH = os.getenv("MODELS_PATH")
 if not MODELS_PATH:
     raise RuntimeError("MODELS_PATH env variable not set. Exiting.")
 
+MODEL_ID = os.getenv("MODEL_ID")
+if not MODEL_ID:
+    raise RuntimeError("MODEL_ID env variable not set. Exiting.")
+
 
 CENTER_TYPE = os.getenv("CENTER_TYPE")
 
-model_id = uuid4().hex[:5]
-print(f"Starting model training: model_id={model_id}")
 
-MODEL_PARAMS = dict(
-    ALL={
-        "n_estimators": 1000,
-        "max_depth": 5,
-        "learning_rate": 0.02,
-        "loss": "squared_error",
-        "validation_fraction": 0.05,
-        "n_iter_no_change": 15,
-        "verbose": 1,
-    },
-    TYPE_A={
-        "n_estimators": 1000,
-        "max_depth": 5,
-        "learning_rate": 0.02,
-        "loss": "squared_error",
-        "validation_fraction": 0.05,
-        "n_iter_no_change": 15,
-        "verbose": 1,
-    },
-    TYPE_B={
-        "n_estimators": 1000,
-        "max_depth": 2,
-        "learning_rate": 0.01,
-        "loss": "squared_error",
-        "validation_fraction": 0.05,
-        "n_iter_no_change": 15,
-        "verbose": 1,
-    },
-    TYPE_C={
-        "n_estimators": 1000,
-        "max_depth": 8,
-        "learning_rate": 0.01,
-        "loss": "squared_error",
-        "validation_fraction": 0.05,
-        "n_iter_no_change": 15,
-        "verbose": 1,
-    },
-)
+# meal-demand predict.py --center-id=177 --meal-id=1445
+
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--center-id", help="The center id to predict demand for")
+parser.add_argument("--meal-id", help="The meal id to predict demand for")
+args = parser.parse_args()
+
+
+print(f"Starting predict: model_id={MODEL_ID}")
+
 
 config = Config(
-    seed=137,
+    seed=None,
     data_path=Path(DATA_PATH),
     models_path=Path(MODELS_PATH),
     center_type=CENTER_TYPE,
-    model_params=MODEL_PARAMS.get(CENTER_TYPE, "ALL"),  # pyright: ignore
-    model_id=model_id,
+    model_params=None,
+    model_id=MODEL_ID,
     fulfilment_center_file="kaggle/fulfilment_center_info.csv",
     meal_info_file="kaggle/meal_info.csv",
     train_file="kaggle/train.csv",
@@ -94,7 +71,12 @@ config = Config(
         "category",
         "cuisine",
     ],
+    max_week=145,
 )
+
+
+print(f"Completed prediction: model_id={MODEL_ID}")
+
 
 np.random.seed(config.seed)
 df = prep_load(config)
@@ -102,6 +84,4 @@ df = feat_ts(df)
 df, ohe_processed_features = prep_ohe(df, config)
 feature_columns = [config.target] + config.numeric_features + ohe_processed_features
 df = prep_filter(df)
-train(df, feature_columns, config)
-
-print(f"Completed model training: model_id={model_id}")
+predict(df, feature_columns, config, args.center_id, args.meal_id)

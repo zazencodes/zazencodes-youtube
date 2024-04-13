@@ -14,6 +14,7 @@ def prep_load(config: Config):
     logger.info("Started dataprep: step=load")
     dfs = _load(config)
     df = _merge(dfs)
+    df = _center_type_filter(df, config.center_type)
     logger.info("Completed dataprep: step=load")
     return df
 
@@ -46,4 +47,12 @@ def _merge(dfs: Dict[str, pd.DataFrame]):
             "Change in row count after merge. "
             "Check dimension tables for duplication on merge keys."
         )
+    return df
+
+
+def _center_type_filter(df: pd.DataFrame, center_type: str | None) -> pd.DataFrame:
+    if not center_type:
+        return df
+
+    df = df[df.center_type == center_type]  # pyright: ignore
     return df
