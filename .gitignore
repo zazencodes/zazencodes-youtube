@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+venv
 
 # local env files
 .env.local
@@ -33,3 +34,4 @@ __pycache__
 
 # Video-specific
 src/docker-meal-demand-forecasting/**/*.csv
+src/ml-engineer-starter-pack/**/*.csv

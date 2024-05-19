@@ -1,0 +1,3 @@
+https://medium.com/@mckenziefiege/arrays-linked-lists-and-big-o-notation-486727b6259b
+https://dev.to/ggorantala/array-strengths-weaknesses-and-big-o-complexity-analysis-4aho
+https://stackoverflow.com/questions/27625241/big-o-complexity-in-binary-search-treebst
