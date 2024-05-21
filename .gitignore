@@ -34,5 +34,6 @@ __pycache__
 
 # Video-specific
 src/docker-meal-demand-forecasting/**/*.csv
-src/ml-engineer-starter-pack/**/*.csv
+src/ml-engineer-starter-pack/4b-dask/**/*.csv
+src/ml-engineer-starter-pack/11*/**/*.csv
 src/ml-engineer-starter-pack/**/*.json
