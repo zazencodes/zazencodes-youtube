@@ -1,6 +1,6 @@
 import pandas as pd
 
-from ..config import FEATURE_COLUMNS, CATEGORICAL_FEATURES, MIN_BIN_SIZE
+from ..config import CATEGORICAL_FEATURES, FEATURE_COLUMNS, MIN_BIN_SIZE
 from ..utils.common import get_logger
 
 logger = get_logger()

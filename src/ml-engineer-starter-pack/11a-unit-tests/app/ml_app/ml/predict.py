@@ -5,7 +5,8 @@ import pandas as pd
 from joblib import load
 from sklearn.ensemble import HistGradientBoostingRegressor
 
-from ..config import TARGET_COLUMN, FEATURE_COLUMNS, ID_COLUMNS, MODEL_PATH, RESULT_PATH
+from ..config import (FEATURE_COLUMNS, ID_COLUMNS, MODEL_PATH, RESULT_PATH,
+                      TARGET_COLUMN)
 from ..utils.common import get_logger
 
 logger = get_logger()

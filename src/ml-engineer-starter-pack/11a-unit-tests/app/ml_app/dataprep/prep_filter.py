@@ -1,6 +1,7 @@
 import pandas as pd
 
-from ..config import FEATURE_COLUMNS, ID_COLUMNS, MIN_CRITIC_COUNT, TARGET_COLUMN
+from ..config import (FEATURE_COLUMNS, ID_COLUMNS, MIN_CRITIC_COUNT,
+                      TARGET_COLUMN)
 from ..utils.common import get_logger
 
 logger = get_logger()
