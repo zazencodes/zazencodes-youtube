@@ -3,9 +3,9 @@
 Start database
 
 ```bash
-docker run --name mongodb -d -p 27017:27017 mongo
+docker run --name zc_mongo -d -p 27017:27017 mongo
 docker ps
-docker exec -it zc_mongo mongo
+docker exec -it zc_mongo /bin/bash
 mongosh
 ```
 

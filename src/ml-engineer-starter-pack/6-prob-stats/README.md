@@ -1,8 +1,5 @@
 # Probability and stats
 
-
-
-
 ## Basic probability
 
 - Use cases:
@@ -149,7 +146,7 @@ scipy_y_values = norm.pdf(x_values, mean, std_dev)
 # Plotting
 plt.figure(figsize=(10, 6))
 plt.plot(x_values, manual_y_values, label='Manual Normal Distribution', lw=10)
-plt.plot(x_values, numpy_y_values, label='NumPy Normal Distribution', lw=3)
+plt.plot(x_values, scipy_y_values, label='NumPy Normal Distribution', lw=3)
 plt.title('Normal Distribution')
 plt.xlabel('x')
 plt.ylabel('Probability Density')

@@ -1,15 +1,3 @@
-# Parallel computing
-
-## Basic demo
-
-- [x] Run `demo.py`
-- [x] Observe htop processes being spawned (filter on python)
-- [x] Compare with `NUM_CORES = 1`
-
-
-## ML demo
-
-```python
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -25,7 +13,9 @@ X = np.concatenate([data.data for _ in range(INFLATE_FACTOR)])
 y = np.concatenate([data.target for _ in range(INFLATE_FACTOR)])
 
 # Split the dataset into training and test sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.3, random_state=42
+)
 
 # Initialize the RandomForestClassifier with parallel processing
 rf_parallel = RandomForestClassifier(n_jobs=-1, random_state=42)
@@ -58,4 +48,3 @@ accuracy_serial = accuracy_score(y_test, y_pred_serial)
 # Output the results for serial processing
 print(f"Serial training time: {serial_duration:.4f} seconds")
 print(f"Serial accuracy: {accuracy_serial:.4f}")
-```

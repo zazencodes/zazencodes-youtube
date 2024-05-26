@@ -133,10 +133,10 @@ from sklearn.datasets import make_blobs
 from sklearn.cluster import KMeans
 
 # Generate synthetic data
-X, _ = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)
+X, _ = make_blobs(n_samples=300, centers=23, cluster_std=0.60, random_state=0)
 
 # Apply KMeans clustering
-kmeans = KMeans(n_clusters=4)
+kmeans = KMeans(n_clusters=3)
 kmeans.fit(X)
 
 # Get cluster centers and labels

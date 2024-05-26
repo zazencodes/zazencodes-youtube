@@ -1,6 +1,10 @@
 # Data structures
 
 
+## Cheat sheet
+
+https://www.bigocheatsheet.com/
+
 ## General notes
 
 - Data structures are foundational, they are used everywhere and largely abstracted so that we often don't have to think about them
@@ -52,26 +56,109 @@ print(4 in array)  # Output: True
     - Delete: O(1)-O(n)
     - Search: O(n)
 ```python
-from collections import deque
 
-# Linked list demo using deque
-linked_list = deque([1, 2, 3, 4, 5])
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
-# Access
-# Note: Direct access by index is not efficient with deque and not typically done in linked lists
-# but for demonstration purposes, we will convert to a list temporarily to access by index.
-print(list(linked_list)[2])  # Output: 3
+def append(head, x):
+    new_node = ListNode(x)
+    if not head:
+        return new_node
+    last = head
+    while last.next:
+        last = last.next
+    last.next = new_node
+    return head
 
-# Insert
-linked_list.append(6)
-print(list(linked_list))  # Output: [1, 2, 3, 4, 5, 6]
+def insert(prev_node, x):
+    if not prev_node:
+        print("The given previous node must not be None")
+        return
+    new_node = ListNode(x)
+    new_node.next = prev_node.next
+    prev_node.next = new_node
 
-# Delete
-linked_list.remove(3)
-print(list(linked_list))  # Output: [1, 2, 4, 5, 6]
+def delete(head, key):
+    temp = head
 
-# Search
-print(4 in linked_list)  # Output: True
+    if temp is not None:
+        if temp.val == key:
+            head = temp.next
+            temp = None
+            return head
+
+    while temp is not None:
+        if temp.next and temp.next.val == key:
+            break
+        temp = temp.next
+
+    if temp is None:
+        print("The key is not present in the linked list")
+        return head
+
+    next = temp.next.next
+    temp.next = None
+    temp.next = next
+    return head
+
+def search(head, key):
+    current = head
+
+    while current is not None:
+        if current.val == key:
+            return True
+        current = current.next
+    return False
+
+def get(head, index):
+    current = head
+    count = 0
+
+    while current:
+        if count == index:
+            return current.val
+        count += 1
+        current = current.next
+
+    return None  # If index is out of range
+
+def display(head):
+    elements = []
+    current = head
+    while current:
+        elements.append(current.val)
+        current = current.next
+    print("Linked List:", elements)
+
+# Demo
+head = None
+
+# Append elements
+head = append(head, 1)
+head = append(head, 2)
+head = append(head, 3)
+print("After appending 1, 2, 3:")
+display(head)
+
+# Insert element
+insert(head.next, 4)
+print("After inserting 4 after second node:")
+display(head)
+
+# Delete element
+head = delete(head, 2)
+print("After deleting node with value 2:")
+display(head)
+
+# Search element
+print("Searching for 3:", search(head, 3))
+print("Searching for 5:", search(head, 5))
+
+# Get element by index
+print("Element at index 1:", get(head, 1))
+print("Element at index 3:", get(head, 3))
 
 ```
 

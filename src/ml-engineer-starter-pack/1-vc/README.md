@@ -1,10 +1,11 @@
 # Version control
 
-- [ ] Clone repo: https://github.com/agalea91/zazencodes-youtube/
-- [ ] Commit some change
-- [ ] Show pull change
-- [ ] Show merge conflict
-- [ ] Show branch with pull request
+- [x] Clone repo: https://github.com/agalea91/zazencodes-youtube/
+- [x] Create new repo
+- [x] Commit some change
+- [x] Show pull change
+- [x] Show merge conflict
+- [x] Show branch with pull request
 
 
 

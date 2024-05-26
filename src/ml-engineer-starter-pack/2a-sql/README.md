@@ -3,7 +3,7 @@
 Start database
 
 ```bash
-docker run --name zc_postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+docker run --name zc_postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres:13.15
 docker ps
 docker exec -it zc_postgres /bin/bash
 psql -U postgres

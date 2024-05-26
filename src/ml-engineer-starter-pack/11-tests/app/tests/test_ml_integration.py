@@ -18,7 +18,7 @@ from ml_app.feateng.feat_bin import feat_bin
 TRAIN_DATA_FILE = "../../data/train.Video_Games_Sales_as_at_22_Dec_2016.csv"
 PRED_DATA_FILE = "../../data/pred.Video_Games_Sales_as_at_22_Dec_2016.csv"
 
-MODEL_ID = "abieh28"
+MODEL_ID = "abiwh28"
 MODEL_OUTPUT_FILE = "models/gbr_{model_id}.pkl"
 PREDICTION_OUTPUT_FILE = "predictions/gbr_{model_id}.csv"
 
