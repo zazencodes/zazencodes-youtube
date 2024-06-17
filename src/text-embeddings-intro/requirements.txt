@@ -1,0 +1,8 @@
+scikit-learn
+gensim
+transformers
+torch
+openai
+matplotlib
+scipy==1.12
+pandas
