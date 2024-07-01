@@ -3,6 +3,5 @@ torchvision
 git+https://github.com/openai/CLIP.git
 opencv-python
 pillow
-pyspark
 scikit-learn
 matplotlib
