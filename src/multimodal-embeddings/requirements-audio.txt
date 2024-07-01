@@ -1,0 +1,16 @@
+transformers
+pillow
+scipy
+torch
+requests
+pandas
+seaborn
+matplotlib
+tqdm
+torchvision
+scikit-learn
+memory_profiler
+setuptools
+librosa
+numpy<2
+wav2clip

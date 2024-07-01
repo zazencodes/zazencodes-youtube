@@ -37,3 +37,8 @@ src/docker-meal-demand-forecasting/**/*.csv
 src/ml-engineer-starter-pack/4b-dask/**/*.csv
 src/ml-engineer-starter-pack/11*/**/*.csv
 src/ml-engineer-starter-pack/**/*.json
+src/multimodal-embeddings/notebooks/src/dev*.ipynb
+src/multimodal-embeddings/data
+src/multimodal-embeddings/models
+src/multimodal-embeddings/outputs
+src/multimodal-embeddings/venv*
