@@ -14,7 +14,7 @@
 ## 📚 Topics
 
 ### 🧠 Machine Learning
-- [Multimodal Embeddings Series](https://github.com/agalea91/zazencodes-youtube/tree/main/src/multimodal-embeddings) | [YouTube 1 🎬]() [2 🎬]() [3 🎬]() [4 🎬]()
+- [Multimodal Embeddings Series](https://github.com/agalea91/zazencodes-youtube/tree/main/src/multimodal-embeddings) | [YouTube 1 🎬](), [2 🎬](), [3 🎬](), [4 🎬]()
 - [Text Embeddings with Python](https://github.com/agalea91/zazencodes-youtube/tree/main/src/text-embeddings-intro) | [YouTube 🎬](https://youtu.be/pfRA3Scz3Fw)
 - [Containerizing an ML Model with Docker](https://github.com/agalea91/zazencodes-youtube/tree/main/src/docker-meal-demand-forecasting) | [YouTube 🎬]()
 - [Model Cards for Model Reporting](https://github.com/agalea91/zazencodes-youtube/tree/main/src/model-cards-for-model-reporting/notebooks) | [YouTube 🎬](https://youtu.be/saAUB_MG2d0)
