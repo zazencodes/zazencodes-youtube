@@ -14,13 +14,15 @@
 ## 📚 Topics
 
 ### 🧠 Machine Learning
-- [Multimodal Embeddings Series](https://github.com/agalea91/zazencodes-youtube/tree/main/src/multimodal-embeddings) | [YouTube 1 🎬](), [2 🎬](), [3 🎬](), [4 🎬]()
+- [Multimodal Embeddings Series](https://github.com/agalea91/zazencodes-youtube/tree/main/src/multimodal-embeddings) | [YouTube 1 🎬](https://youtu.be/1fI4eRoKhrc), [2 🎬](https://youtu.be/Fu-W2VyJYRc), [3 🎬](https://youtu.be/875RhZwa-6M), [4 🎬](https://youtu.be/XPA213k8G_U)
 - [Text Embeddings with Python](https://github.com/agalea91/zazencodes-youtube/tree/main/src/text-embeddings-intro) | [YouTube 🎬](https://youtu.be/pfRA3Scz3Fw)
-- [Containerizing an ML Model with Docker](https://github.com/agalea91/zazencodes-youtube/tree/main/src/docker-meal-demand-forecasting) | [YouTube 🎬]()
+- [Containerizing an ML Model with Docker](https://github.com/agalea91/zazencodes-youtube/tree/main/src/docker-meal-demand-forecasting) | [YouTube 🎬](https://youtu.be/KYxlM0hh96o)
 - [Model Cards for Model Reporting](https://github.com/agalea91/zazencodes-youtube/tree/main/src/model-cards-for-model-reporting/notebooks) | [YouTube 🎬](https://youtu.be/saAUB_MG2d0)
 
 ### 🐋 Developer Fundamentals
-- [Docker Runtime Arguments](https://github.com/agalea91/zazencodes-youtube/tree/main/src/docker-runtime-arguments) | [YouTube 🎬]()
+- [Replace your YAML configs with Pydantic](https://github.com/agalea91/zazencodes-youtube/tree/main/src/replace-yaml-with-pydantic) | [YouTube 🎬]()
+- [5 Docker tricks for rapid development](https://github.com/agalea91/zazencodes-youtube/tree/main/src/docker-rapid-development-tricks) | [YouTube 🎬](https://youtu.be/3e8J_pv-xJI)
+- [Docker Runtime Arguments](https://github.com/agalea91/zazencodes-youtube/tree/main/src/docker-runtime-arguments) | [YouTube 🎬](https://youtu.be/05ptDtpyAGo)
 
 ### 🐍 Python Fundamentals
 - [Python Project Starter Pack Series](https://github.com/agalea91/zazencodes-youtube/tree/main/src/python-project-starter-kit/shopping-cart-app) | [YouTube 1 🎬](https://youtu.be/niMybnzmzqc), [2 🎬](https://youtu.be/ns73xOcl9es), [3 🎬](https://youtu.be/dlCcnJdh4c4)
