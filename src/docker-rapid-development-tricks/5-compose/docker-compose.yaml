@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  web:
+    image: prediction-server
+    build: .
+    ports:
+      - "5001:5001"
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${_POSTGRES_PASSWORD}
+      POSTGRES_HOST: db
+      REDIS_HOST: redis
+    volumes:
+      - ./app:/app
+      - ./artifacts:/artifacts
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${_POSTGRES_PASSWORD}
+
+  redis:
+    image: redis
+
