@@ -13,7 +13,7 @@ def generate_yaml_from_pydantic_obj(
     fp.parent.mkdir(exist_ok=True, parents=True)
 
     print(f"Writing to file {file_path}")
-    fp.write_text(yaml.dump(obj.model_dump()))
+    fp.write_text(yaml.dump(obj.model_dump(by_alias=True, exclude_none=True)))
 
     if obj_model:
         try:
