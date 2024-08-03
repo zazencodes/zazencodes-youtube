@@ -30,15 +30,18 @@ __pycache__
 **/notebooks/html
 
 # Data files
-*.pkl
+# *.pkl
 
 # Video-specific
 src/docker-meal-demand-forecasting/**/*.csv
+src/docker-meal-demand-forecasting/**/*.pkl
 src/ml-engineer-starter-pack/4b-dask/**/*.csv
 src/ml-engineer-starter-pack/11*/**/*.csv
 src/ml-engineer-starter-pack/**/*.json
+src/ml-engineer-starter-pack/**/*.pkl
 src/multimodal-embeddings/notebooks/src/dev*.ipynb
 src/multimodal-embeddings/data
 src/multimodal-embeddings/models
 src/multimodal-embeddings/outputs
 src/multimodal-embeddings/venv*
+src/multimodal-embeddings/**/*.pkl
