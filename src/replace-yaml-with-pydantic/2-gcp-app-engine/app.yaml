@@ -1,0 +1,11 @@
+entrypoint: gunicorn -b :$PORT main:app
+env: flex
+manual_scaling: 1
+resources:
+  cpu: 1.0
+  disk_size_gb: 10.0
+  memory_gb: 0.5
+runtime: python
+runtime_config:
+  operating_system: ubuntu22
+  python_version: 3.7
