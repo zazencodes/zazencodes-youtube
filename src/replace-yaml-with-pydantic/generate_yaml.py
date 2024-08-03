@@ -31,4 +31,4 @@ def validate_yaml(
         yaml_data = yaml.safe_load(f)
         print(yaml_data)
     obj_model(**yaml_data)
-    print("Validation OK 🪷serialization_")
+    print("Validation OK 🪷")

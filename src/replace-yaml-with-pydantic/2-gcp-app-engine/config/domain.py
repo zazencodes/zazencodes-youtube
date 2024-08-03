@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field
 
 
 class Resources(BaseModel):
-    cpu: float = Field(ge=1, le=2)
+    cpu: int = Field(ge=1, le=2)
     memory_gb: float = Field(le=4)
     disk_size_gb: float = Field(le=20)
 

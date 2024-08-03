@@ -10,7 +10,6 @@ def setup_logging(config_path: str):
 
 
 setup_logging("logging_config.yaml")
-# setup_logging("test.yaml")
 logger = logging.getLogger("myapp")
 
 if __name__ == "__main__":

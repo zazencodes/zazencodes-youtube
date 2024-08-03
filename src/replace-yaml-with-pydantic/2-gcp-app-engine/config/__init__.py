@@ -4,7 +4,7 @@ app_config = AppEngineConfig(
     entrypoint="gunicorn -b :$PORT main:app",
     runtime_config=RuntimeConfig(
         operating_system="ubuntu22",
-        python_version=3.7,
+        python_version=3.8,
     ),
     resources=Resources(
         cpu=1,
