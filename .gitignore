@@ -45,3 +45,4 @@ src/multimodal-embeddings/models
 src/multimodal-embeddings/outputs
 src/multimodal-embeddings/venv*
 src/multimodal-embeddings/**/*.pkl
+src/rag-microservice-python/**/*.json

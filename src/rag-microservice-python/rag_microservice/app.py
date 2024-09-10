@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from haystack.document_stores.in_memory import InMemoryDocumentStore
 from haystack import Document
