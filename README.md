@@ -14,6 +14,7 @@
 ## 📚 Topics
 
 ### 🧠 Machine Learning
+- [RAG Microservice with Python](https://github.com/agalea91/zazencodes-youtube/tree/main/src/rag-microservice-python) | [YouTube 🎬]()
 - [Multimodal Embeddings Series](https://github.com/agalea91/zazencodes-youtube/tree/main/src/multimodal-embeddings) | [YouTube 1 🎬](https://youtu.be/1fI4eRoKhrc), [2 🎬](https://youtu.be/Fu-W2VyJYRc), [3 🎬](https://youtu.be/875RhZwa-6M), [4 🎬](https://youtu.be/XPA213k8G_U)
 - [Text Embeddings with Python](https://github.com/agalea91/zazencodes-youtube/tree/main/src/text-embeddings-intro) | [YouTube 🎬](https://youtu.be/pfRA3Scz3Fw)
 - [Containerizing an ML Model with Docker](https://github.com/agalea91/zazencodes-youtube/tree/main/src/docker-meal-demand-forecasting) | [YouTube 🎬](https://youtu.be/KYxlM0hh96o)
