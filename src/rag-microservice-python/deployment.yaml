@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rag-microservice-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rag-microservice
+  template:
+    metadata:
+      labels:
+        app: rag-microservice
+    spec:
+      containers:
+      - name: rag-microservice
+        image: registry.digitalocean.com/zazencodes/rag-microservice:k8s
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - secretRef:
+            name: rag-microservice-secret  # Referring to Kubernetes Secret for environment variables
+
+
+
