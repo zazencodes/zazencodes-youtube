@@ -1,17 +1,17 @@
+import os
+from pathlib import Path
+
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from haystack.document_stores.in_memory import InMemoryDocumentStore
-from haystack import Document
+from haystack import Document, Pipeline
+from haystack.components.builders import PromptBuilder
 from haystack.components.embedders import (
     SentenceTransformersDocumentEmbedder,
     SentenceTransformersTextEmbedder,
 )
-from haystack.components.retrievers.in_memory import InMemoryEmbeddingRetriever
-from haystack.components.builders import PromptBuilder
 from haystack.components.generators import OpenAIGenerator
-from haystack import Pipeline
-from pathlib import Path
-import os
+from haystack.components.retrievers.in_memory import InMemoryEmbeddingRetriever
+from haystack.document_stores.in_memory import InMemoryDocumentStore
+from pydantic import BaseModel
 
 CORPUS_DOCUMENTS_PATH = os.environ["CORPUS_DOCUMENTS_PATH"]
 CORPUS_DOCUMENTS_FILE_EXT = os.environ["CORPUS_DOCUMENTS_FILE_EXT"]
