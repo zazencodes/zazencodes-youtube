@@ -13,15 +13,20 @@
 
 ## 📚 Topics
 
+### 🔮 AI Engineering
+- [Deploy an AI Microservice with Kubernetes](https://github.com/zazencodes/zazencodes-youtube/tree/main/src/rag-microservice-python#kubernetes-deployment) | [YouTube 🎬](https://youtu.be/ETCN_HdvLEU)
+- [Docker Microservice Deployment with Container Registry](https://github.com/zazencodes/zazencodes-youtube/tree/main/src/rag-microservice-python#container-registry-deployment) | [YouTube 🎬](https://youtu.be/D9sG8mC-ioE)
+- [Deploying an AI Docker app on DigitalOcean](https://github.com/zazencodes/zazencodes-youtube/tree/main/src/rag-microservice-python#basic-server-deployment) | [YouTube 🎬](https://youtu.be/6aYclVrsqu0)
+
 ### 🧠 Machine Learning
-- [RAG Microservice with Python](https://github.com/agalea91/zazencodes-youtube/tree/main/src/rag-microservice-python) | [YouTube 🎬]()
+- [RAG Microservice with Python](https://github.com/agalea91/zazencodes-youtube/tree/main/src/rag-microservice-python) | [YouTube 🎬](https://youtu.be/PJaqp5Kdwz0)
 - [Multimodal Embeddings Series](https://github.com/agalea91/zazencodes-youtube/tree/main/src/multimodal-embeddings) | [YouTube 1 🎬](https://youtu.be/1fI4eRoKhrc), [2 🎬](https://youtu.be/Fu-W2VyJYRc), [3 🎬](https://youtu.be/875RhZwa-6M), [4 🎬](https://youtu.be/XPA213k8G_U)
 - [Text Embeddings with Python](https://github.com/agalea91/zazencodes-youtube/tree/main/src/text-embeddings-intro) | [YouTube 🎬](https://youtu.be/pfRA3Scz3Fw)
 - [Containerizing an ML Model with Docker](https://github.com/agalea91/zazencodes-youtube/tree/main/src/docker-meal-demand-forecasting) | [YouTube 🎬](https://youtu.be/KYxlM0hh96o)
 - [Model Cards for Model Reporting](https://github.com/agalea91/zazencodes-youtube/tree/main/src/model-cards-for-model-reporting/notebooks) | [YouTube 🎬](https://youtu.be/saAUB_MG2d0)
 
 ### 🐋 Developer Fundamentals
-- [Replace your YAML configs with Pydantic](https://github.com/agalea91/zazencodes-youtube/tree/main/src/replace-yaml-with-pydantic) | [YouTube 🎬]()
+- [Replace your YAML configs with Pydantic](https://github.com/agalea91/zazencodes-youtube/tree/main/src/replace-yaml-with-pydantic) | [YouTube 🎬](https://youtu.be/4JAdedd_G-w)
 - [5 Docker tricks for rapid development](https://github.com/agalea91/zazencodes-youtube/tree/main/src/docker-rapid-development-tricks) | [YouTube 🎬](https://youtu.be/3e8J_pv-xJI)
 - [Docker Runtime Arguments](https://github.com/agalea91/zazencodes-youtube/tree/main/src/docker-runtime-arguments) | [YouTube 🎬](https://youtu.be/05ptDtpyAGo)
 
