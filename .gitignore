@@ -21,6 +21,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+*.ruff_cache
 
 
 .ipynb_checkpoints
@@ -46,3 +47,5 @@ src/multimodal-embeddings/outputs
 src/multimodal-embeddings/venv*
 src/multimodal-embeddings/**/*.pkl
 src/rag-microservice-python/**/*.json
+src/avante-nvim-demos/**/*.pkl
+src/avante-nvim-demos/**/venv

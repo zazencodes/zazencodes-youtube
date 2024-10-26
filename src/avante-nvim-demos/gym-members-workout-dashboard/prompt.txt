@@ -1,0 +1,8 @@
+Update this streamlit dashboard to analyze data from my dataset
+
+The dataset is in this file: ../data/gym_members_exercise_tracking.csv
+
+Include a mix of tables and visualizations, such as bar charts and pie charts
+
+Include some filters that I can use to do analysis
+

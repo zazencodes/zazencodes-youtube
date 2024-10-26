@@ -1,0 +1,31 @@
+You are a senior data scientist. Create a streamlit dashboard in this file in order to visualize the data in the CSV file:
+
+../data/user_behavior_dataset.csv
+
+
+Here are the first few rows of the dataset, including the header:
+
+User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (hours/day),Battery Drain (mAh/day),Number of Apps Installed,Data Usage (MB/day),Age,Gender,User Behavior Class
+1,Google Pixel 5,Android,393,6.4,1872,67,1122,40,Male,4
+2,OnePlus 9,Android,268,4.7,1331,42,944,47,Female,3
+3,Xiaomi Mi 11,Android,154,4.0,761,32,322,42,Male,2
+4,Google Pixel 5,Android,239,4.8,1676,56,871,20,Male,3
+5,iPhone 12,iOS,187,4.3,1367,58,988,31,Female,3
+6,Google Pixel 5,Android,99,2.0,940,35,564,31,Male,2
+7,Samsung Galaxy S21,Android,350,7.3,1802,66,1054,21,Female,4
+8,OnePlus 9,Android,543,11.4,2956,82,1702,31,Male,5
+9,Samsung Galaxy S21,Android,340,7.7,2138,75,1053,42,Female,4
+
+Here are all the unique values of Device Model: 'Google Pixel 5', 'OnePlus 9', 'Xiaomi Mi 11', 'iPhone 12', 'Samsung Galaxy S21'
+
+Here are all the unique values of Operating System: 'Android', 'iOS'
+
+For the charts, use altair.
+
+Use the device model and operating system columns to segment the charts. Use consistent colors for these dimensions through out. Use a muted color palette.
+
+Include a mix of bar, line and pie charts.
+
+Also include scorecards at the top of the report.
+
+And aldo include a table of aggregated scorecard metrics broken down by the dimensions, in a table at the bottom.
